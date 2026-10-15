@@ -44,7 +44,7 @@
                 <p class="section-label">ABOUT</p>
                 <h2>About Me</h2>
             </div>
-            <p class="about-text">我主要学习和研究机器人技术，喜欢动手做实验、解决实际问题，也愿意不断学习新东西。</p>
+            <p class="about-text">目前关注和研究机器人技术，喜欢动手做实验、解决实际问题，也愿意不断学习新东西。</p>
         </section>
 
         <section id="directory" class="directory-section">
@@ -155,7 +155,7 @@
                     <div class="project-title-area">
                         <p class="project-index">单机械臂 / 01</p>
                         <h2>冗余机械臂数据驱动运动—力协同控制</h2>
-                        <p class="project-summary">针对模型未知条件下冗余机械臂接触任务中的轨迹跟踪、交互力响应和接触稳定性问题，研究数据驱动运动—力协同控制方法。</p>
+                        <p class="project-summary">研究模型未知冗余机械臂的数据驱动运动–力协同控制，实现轨迹跟踪与接触力稳定调节。</p>
                     </div>
 
                     <div class="project-media-grid variable-ratio-media">
@@ -177,18 +177,17 @@
                         <div class="project-info-block">
                             <h3>项目背景</h3>
                             <ul>
-                                <li>接触任务要求机械臂同时准确跟踪运动轨迹和期望交互力。</li>
-                                <li>机械臂模型不确定、接触环境未知及力响应滞后会降低控制精度。</li>
-                                <li>传统控制方法通常依赖准确的运动学和动力学模型。</li>
+                                <li>在精密装配、表面打磨和接触式检测等任务中，机械臂需兼顾轨迹跟踪精度与接触力稳定性，保障作业质量与安全。</li>
+                                <li>运动学模型不确定、环境刚度变化及外部扰动等因素易引起轨迹偏差、接触力波动和系统失稳。</li>
+                                <li>传统运动–力控制方法依赖准确的机器人模型和固定控制参数，难以适应模型误差与复杂接触环境。</li>
                             </ul>
                         </div>
                         <div class="project-info-block">
                             <h3>主要工作</h3>
                             <ul>
-                                <li>设计双雅可比在线估计器，实现机械臂运动信息和接触信息的在线建模。</li>
-                                <li>构建模糊自适应循环神经网络，实现未知模型条件下的轨迹—力协同跟踪。</li>
-                                <li>完成闭环稳定性分析和控制器参数设计。</li>
-                                <li>在 MATLAB、CoppeliaSim 和 UR5 实物平台完成验证。</li>
+                                <li>完成末端六维力传感器的数据读取、坐标转换与实时反馈，将接触力测量信息引入闭环控制系统。</li>
+                                <li>设计数据驱动运动–力协同控制器，实现模型未知条件下的高精度轨迹跟踪与稳定接触力调节。</li>
+                                <li>基于 MATLAB、CoppeliaSim 和 UR5 实物平台开展仿真与接触实验，验证控制方法的跟踪精度、力响应性能及抗干扰能力。</li>
                             </ul>
                         </div>
                     </div>
