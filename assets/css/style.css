@@ -505,6 +505,26 @@ img {
     border-radius: 10px;
 }
 
+.skill-card:nth-child(1) {
+    background-color: #eaf4ee;
+    border-color: #cfe3d7;
+}
+
+.skill-card:nth-child(2) {
+    background-color: #edf3f8;
+    border-color: #d2e0eb;
+}
+
+.skill-card:nth-child(3) {
+    background-color: #f7f1e8;
+    border-color: #e8dcc9;
+}
+
+.skill-card:nth-child(4) {
+    background-color: #f1eef7;
+    border-color: #ddd6eb;
+}
+
 .skill-card h3 {
     margin: 0 0 4px;
     color: #20242a;
