@@ -131,12 +131,13 @@
                         <h3>单片机</h3>
                     </div>
                     <div class="directory-projects">
-                        <div class="directory-item directory-placeholder">
+                        <a href="#embedded-systems" class="directory-item">
                             <div>
-                                <h4>项目内容待补充</h4>
-                                <p>芯片型号 · 通信方式 · 控制功能 · 开发语言</p>
+                                <h4>⭐ 基于 MSP432 的嵌入式系统开发</h4>
+                                <p>外设驱动 | 中断定时 | 状态机 | 软硬件联调</p>
                             </div>
-                        </div>
+                            <span class="directory-arrow">→</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -377,6 +378,53 @@
                         </div>
                     </div>
                     <div class="tech-stack"><span>自动驾驶</span><span>激光雷达</span><span>点云聚类</span><span>障碍物检测</span></div>
+                </div>
+            </article>
+
+            <article id="embedded-systems" class="project-detail alternate">
+                <div class="project-detail-inner">
+                    <div class="project-title-area">
+                        <p class="project-index">单片机 / 01</p>
+                        <h2>基于 MSP432 的嵌入式系统开发：循迹机器人与智能钟</h2>
+                        <p class="project-summary">围绕 MSP432P401R 开展嵌入式软硬件开发，完成循迹迷宫机器人与多功能智能钟的外设驱动、实时控制、交互设计及系统联调。</p>
+                    </div>
+
+                    <div class="project-media-grid">
+                        <figure>
+                            <video controls preload="metadata" poster="assets/images/video-placeholder.svg">
+                                <source src="assets/videos/dpj1.mp4?v=20261015" type="video/mp4">
+                            </video>
+                            <figcaption>RSLK 循迹机器人迷宫自主行驶实验</figcaption>
+                        </figure>
+                        <figure>
+                            <video controls preload="metadata" poster="assets/images/video-placeholder.svg">
+                                <source src="assets/videos/dpj2.mp4?v=20261015" type="video/mp4">
+                            </video>
+                            <figcaption>MSP432 多功能智能钟系统演示</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="project-info-grid">
+                        <div class="project-info-block">
+                            <h3>项目背景</h3>
+                            <ul>
+                                <li>嵌入式系统需要在有限计算与硬件资源下完成传感器采集、执行器控制、实时任务调度和人机交互，对软硬件协同设计能力提出较高要求。</li>
+                                <li>循迹机器人需要根据红外传感器阵列实时识别直线、弯道与复杂路口，并通过电机控制完成巡线、转向和迷宫路径决策。</li>
+                                <li>智能钟需要协调实时时钟、OLED、按键、蜂鸣器和 LED 等外设，在保证计时准确性的同时实现多功能界面与可靠交互。</li>
+                            </ul>
+                        </div>
+                        <div class="project-info-block">
+                            <h3>主要工作</h3>
+                            <ul>
+                                <li>基于 MSP432P401R 完成 GPIO、PWM、定时器、中断及通信接口配置，搭建嵌入式外设驱动与应用程序框架。</li>
+                                <li>在 TI-RSLK 平台读取红外反射传感器阵列，结合有限状态机与左手法则实现黑白线循迹、路口识别、转向和迷宫自主行驶。</li>
+                                <li>针对轮速偏差、采样间隔和转弯时序开展参数调试，并利用板载 LED 显示不同路况与运行状态。</li>
+                                <li>集成 0.96 英寸 OLED、DS1302 实时时钟、按键、蜂鸣器和 LED，完成智能钟硬件连接、驱动开发及菜单式交互界面设计。</li>
+                                <li>基于 TimerA、Timer32 与按键中断实现世界时钟、12/24 小时切换、闹钟、秒表、倒计时及时间校准等功能，并完成整机联调与测试。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tech-stack"><span>MSP432</span><span>嵌入式 C</span><span>GPIO / PWM</span><span>定时器 / 中断</span><span>OLED / DS1302</span><span>有限状态机</span></div>
                 </div>
             </article>
         </section>
