@@ -410,6 +410,18 @@ img {
     aspect-ratio: 610 / 810;
 }
 
+.project-media-grid.variable-ratio-media .uav-video-square {
+    width: min(520px, 70vw);
+    height: min(520px, 70vw);
+    aspect-ratio: 1 / 1;
+}
+
+.project-media-grid.variable-ratio-media .autoware-video-portrait {
+    width: min(320px, 56vw);
+    height: min(568px, 99.4vw);
+    aspect-ratio: 320 / 568;
+}
+
 .project-media-grid figcaption,
 .project-image-grid figcaption {
     margin-top: 8px;
