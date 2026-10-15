@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">项目视频待添加</title>
+  <desc id="desc">将对应的 MP4 视频放入 assets/videos 目录</desc>
+  <rect width="1600" height="900" fill="#111827"/>
+  <circle cx="800" cy="390" r="82" fill="none" stroke="#9ca3af" stroke-width="8"/>
+  <path d="M775 342 L775 438 L858 390 Z" fill="#e5e7eb"/>
+  <text x="800" y="535" text-anchor="middle" fill="#e5e7eb" font-family="Arial, Microsoft YaHei, sans-serif" font-size="44">项目视频待添加</text>
+  <text x="800" y="600" text-anchor="middle" fill="#9ca3af" font-family="Arial, Microsoft YaHei, sans-serif" font-size="26">MP4 · 16:9</text>
+</svg>

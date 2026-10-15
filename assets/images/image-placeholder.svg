@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">项目图片待添加</title>
+  <desc id="desc">将对应的 PNG 图片放入 assets/images/projects 目录</desc>
+  <rect width="1600" height="900" fill="#eef0f3"/>
+  <rect x="560" y="245" width="480" height="320" rx="18" fill="none" stroke="#9ca3af" stroke-width="8"/>
+  <circle cx="680" cy="350" r="38" fill="#b7bec8"/>
+  <path d="M590 530 L735 405 L840 495 L905 440 L1010 530 Z" fill="#b7bec8"/>
+  <text x="800" y="665" text-anchor="middle" fill="#4b5563" font-family="Arial, Microsoft YaHei, sans-serif" font-size="44">项目图片待添加</text>
+  <text x="800" y="725" text-anchor="middle" fill="#7a828e" font-family="Arial, Microsoft YaHei, sans-serif" font-size="26">PNG · 16:9</text>
+</svg>

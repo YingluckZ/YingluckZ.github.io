@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a class="nav-logo" href="#top">朱思颖</a>
+            <a class="nav-logo" href="#top">Zhu Siying</a>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#directory">Projects</a>
@@ -44,7 +44,7 @@
                 <p class="section-label">ABOUT</p>
                 <h2>About Me</h2>
             </div>
-            <p class="about-text">研究基础涵盖机器人规划与控制、数据驱动建模与学习、运动与力控制等方向，具备较强的自主学习能力和工程实践能力。</p>
+            <p class="about-text">我主要学习和研究机器人技术，喜欢动手做实验、解决实际问题，也愿意不断学习新东西。</p>
         </section>
 
         <section id="directory" class="directory-section">
@@ -52,7 +52,6 @@
                 <div class="directory-header">
                     <p class="section-label">PORTFOLIO</p>
                     <h2>项目目录</h2>
-                    <p>机器人 · 运动控制 · 智能系统</p>
                 </div>
 
                 <div class="directory-row">
@@ -64,21 +63,14 @@
                         <a href="#force-control" class="directory-item">
                             <div>
                                 <h4>⭐ 冗余机械臂数据驱动运动—力协同控制</h4>
-                                <p>在线雅可比估计 · 神经网络 · 接触控制 · UR5</p>
+                                <p>力控制 | 接触操作 | 模糊自适应</p>
                             </div>
                             <span class="directory-arrow">→</span>
                         </a>
                         <a href="#motion-control" class="directory-item">
                             <div>
                                 <h4>⭐ 模型未知冗余机械臂数据驱动运动控制</h4>
-                                <p>DZNN-QN · D²-FDRNN · 轨迹跟踪 · 模型未知</p>
-                            </div>
-                            <span class="directory-arrow">→</span>
-                        </a>
-                        <a href="#obstacle-avoidance" class="directory-item">
-                            <div>
-                                <h4>⭐ 冗余机械臂避障与任务优先级控制</h4>
-                                <p>障碍物避让 · 模糊自适应 · 任务优先级</p>
+                                <p>DZNN-QN | D²-FDRNN | 高精度 | 抗干扰</p>
                             </div>
                             <span class="directory-arrow">→</span>
                         </a>
@@ -93,8 +85,8 @@
                     <div class="directory-projects">
                         <a href="#cable-control" class="directory-item">
                             <div>
-                                <h4>⭐ 双臂柔性线缆形状控制与操作技能库</h4>
-                                <p>双 UR5e · Koopman · 柔性对象 · MuJoCo</p>
+                                <h4>⭐ 双臂柔性线缆数据驱动形状控制</h4>
+                                <p>Koopman | 柔性物体操作 | 双臂协同控制</p>
                             </div>
                             <span class="directory-arrow">→</span>
                         </a>
@@ -110,7 +102,7 @@
                         <a href="#uav-control" class="directory-item">
                             <div>
                                 <h4>⭐ 四旋翼无人机轨迹规划与视觉定位控制</h4>
-                                <p>Minimum-snap · A* · 视觉 SLAM · PD 控制</p>
+                                <p>动力学建模 | 轨迹规划 | SLAM | PD控制</p>
                             </div>
                             <span class="directory-arrow">→</span>
                         </a>
@@ -126,7 +118,7 @@
                         <a href="#autoware" class="directory-item">
                             <div>
                                 <h4>⭐ 基于 Autoware 的巡检机器人自主导航与停障</h4>
-                                <p>Autoware · ROS · 激光雷达 · Pure Pursuit</p>
+                                <p>自动驾驶 | 激光雷达 | 点云聚类 | 障碍物检测</p>
                             </div>
                             <span class="directory-arrow">→</span>
                         </a>
@@ -166,14 +158,18 @@
                         <p class="project-summary">针对模型未知条件下冗余机械臂接触任务中的轨迹跟踪、交互力响应和接触稳定性问题，研究数据驱动运动—力协同控制方法。</p>
                     </div>
 
-                    <div class="project-media-grid">
+                    <div class="project-media-grid variable-ratio-media">
                         <figure>
-                            <img src="assets/images/projects/force-control-real.png" alt="UR5 实物平台接触任务">
-                            <figcaption>UR5 实物平台接触任务</figcaption>
+                            <video class="force-video-landscape" controls preload="metadata" poster="assets/images/video-placeholder.svg">
+                                <source src="assets/videos/force-control.mp4" type="video/mp4">
+                            </video>
+                            <figcaption>项目视频 1：assets/videos/force-control.mp4</figcaption>
                         </figure>
                         <figure>
-                            <img src="assets/images/projects/force-control-sim.png" alt="CoppeliaSim 运动力控制仿真">
-                            <figcaption>CoppeliaSim 运动—力控制验证</figcaption>
+                            <video class="force-video-portrait" controls preload="metadata" poster="assets/images/video-placeholder.svg">
+                                <source src="assets/videos/force-control2.mp4" type="video/mp4">
+                            </video>
+                            <figcaption>项目视频 2：assets/videos/force-control2.mp4</figcaption>
                         </figure>
                     </div>
 
@@ -196,7 +192,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="tech-stack"><span>MATLAB</span><span>CoppeliaSim</span><span>UR5</span><span>力控制</span><span>FRNN</span></div>
+                    <div class="tech-stack"><span>力控制</span><span>接触操作</span><span>模糊自适应</span></div>
                 </div>
             </article>
 
@@ -208,10 +204,18 @@
                         <p class="project-summary">面向运动学模型不确定、传感噪声及外部扰动，研究不依赖精确模型的高精度轨迹跟踪控制方法。</p>
                     </div>
 
-                    <div class="project-image-grid">
+                    <div class="project-media-grid variable-ratio-media">
                         <figure>
-                            <img src="assets/images/projects/motion-tracking.png" alt="冗余机械臂轨迹跟踪实验">
-                            <figcaption>不同构型下的末端轨迹跟踪实验</figcaption>
+                            <video class="motion-video-portrait" controls preload="metadata" poster="assets/images/video-placeholder.svg">
+                                <source src="assets/videos/motion-control.mp4" type="video/mp4">
+                            </video>
+                            <figcaption>项目视频 1：assets/videos/motion-control.mp4</figcaption>
+                        </figure>
+                        <figure>
+                            <video class="motion-video-wide" controls preload="metadata" poster="assets/images/video-placeholder.svg">
+                                <source src="assets/videos/motion-control2.mp4" type="video/mp4">
+                            </video>
+                            <figcaption>项目视频 2：assets/videos/motion-control2.mp4</figcaption>
                         </figure>
                     </div>
 
@@ -243,60 +247,28 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="tech-stack"><span>DZNN-QN</span><span>D²-FDRNN</span><span>卡尔曼滤波</span><span>Kinova</span><span>UR5</span></div>
+                    <div class="tech-stack"><span>DZNN-QN</span><span>D²-FDRNN</span><span>高精度</span><span>抗干扰</span></div>
                 </div>
             </article>
 
-            <article id="obstacle-avoidance" class="project-detail">
-                <div class="project-detail-inner">
-                    <div class="project-title-area">
-                        <p class="project-index">单机械臂 / 03</p>
-                        <h2>冗余机械臂避障与模糊自适应任务优先级控制</h2>
-                        <p class="project-summary">面向复杂环境中的机械臂安全运动，研究由障碍距离驱动的避障控制和任务优先级动态调整方法。</p>
-                    </div>
-
-                    <div class="project-info-grid">
-                        <div class="project-info-block">
-                            <h3>项目背景</h3>
-                            <ul>
-                                <li>冗余机械臂在执行末端任务时，需要同时避免连杆与环境障碍物发生碰撞。</li>
-                                <li>固定任务优先级难以适应障碍距离持续变化的复杂环境。</li>
-                            </ul>
-                        </div>
-                        <div class="project-info-block">
-                            <h3>主要工作</h3>
-                            <ul>
-                                <li>根据机械臂与障碍物之间的距离构建避障约束。</li>
-                                <li>设计模糊自适应任务优先级调节机制。</li>
-                                <li>在保证末端任务执行的同时实现机械臂安全避障。</li>
-                                <li>完成算法仿真、对比实验和控制性能分析。</li>
-                            </ul>
-                        </div>
-                        <div class="project-info-block full-width">
-                            <h3>论文</h3>
-                            <p>第一作者论文录用于 2026 Chinese Automation Congress（CAC 2026）。</p>
-                        </div>
-                    </div>
-                    <div class="tech-stack"><span>Obstacle Avoidance</span><span>Fuzzy Adaptive</span><span>Task Priority</span><span>Redundant Manipulator</span></div>
-                </div>
-            </article>
-
-            <article id="cable-control" class="project-detail alternate">
+            <article id="cable-control" class="project-detail">
                 <div class="project-detail-inner">
                     <div class="project-title-area">
                         <p class="project-index">多机械臂 / 01</p>
-                        <h2>双臂柔性线缆数据驱动形状控制与操作技能库</h2>
+                        <h2>双臂柔性线缆数据驱动形状控制</h2>
                         <p class="project-summary">面向柔性线缆等复杂可变形对象，研究双 UR5e 协同条件下的形状建模、闭环控制及操作技能复用。</p>
                     </div>
 
                     <div class="project-media-grid">
                         <figure>
-                            <img src="assets/images/projects/cable-shape.png" alt="双机械臂柔性线缆形状操作">
-                            <figcaption>双 UR5e 柔性线缆形状操作</figcaption>
+                            <video controls preload="metadata" poster="assets/images/video-placeholder.svg">
+                                <source src="assets/videos/cable-control.mp4" type="video/mp4">
+                            </video>
+                            <figcaption>项目视频：assets/videos/cable-control.mp4</figcaption>
                         </figure>
                         <figure>
-                            <img src="assets/images/projects/cable-straight.png" alt="双机械臂线缆拉直控制">
-                            <figcaption>线缆拉直与端点协同控制</figcaption>
+                            <img src="assets/images/projects/cable-control.png" onerror="this.onerror=null;this.src='assets/images/image-placeholder.svg';" alt="双臂柔性线缆形状控制项目图片">
+                            <figcaption>项目图片：assets/images/projects/cable-control.png</figcaption>
                         </figure>
                     </div>
 
@@ -318,16 +290,28 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="tech-stack"><span>Koopman</span><span>Dual UR5e</span><span>MuJoCo</span><span>MATLAB</span><span>Skill Library</span></div>
+                    <div class="tech-stack"><span>Koopman</span><span>柔性物体操作</span><span>双臂协同控制</span></div>
                 </div>
             </article>
 
-            <article id="uav-control" class="project-detail">
+            <article id="uav-control" class="project-detail alternate">
                 <div class="project-detail-inner">
                     <div class="project-title-area">
                         <p class="project-index">无人机 / 01</p>
                         <h2>四旋翼无人机轨迹规划与视觉定位控制</h2>
                         <p class="project-summary">完成四旋翼无人机轨迹优化、三维自主避障、视觉定位及轨迹跟踪控制算法开发。</p>
+                    </div>
+                    <div class="project-media-grid">
+                        <figure>
+                            <video controls preload="metadata" poster="assets/images/video-placeholder.svg">
+                                <source src="assets/videos/uav-control.mp4" type="video/mp4">
+                            </video>
+                            <figcaption>项目视频：assets/videos/uav-control.mp4</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/images/projects/uav-control.png" onerror="this.onerror=null;this.src='assets/images/image-placeholder.svg';" alt="四旋翼无人机项目图片">
+                            <figcaption>项目图片：assets/images/projects/uav-control.png</figcaption>
+                        </figure>
                     </div>
                     <div class="project-info-grid">
                         <div class="project-info-block">
@@ -349,11 +333,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="tech-stack"><span>Minimum-snap</span><span>A*</span><span>Visual SLAM</span><span>PD Control</span><span>MATLAB</span></div>
+                    <div class="tech-stack"><span>动力学建模</span><span>轨迹规划</span><span>SLAM</span><span>PD控制</span></div>
                 </div>
             </article>
 
-            <article id="autoware" class="project-detail alternate">
+            <article id="autoware" class="project-detail">
                 <div class="project-detail-inner">
                     <div class="project-title-area">
                         <p class="project-index">无人车 / 01</p>
@@ -361,10 +345,16 @@
                         <p class="project-summary">基于 Autoware 完成巡检机器人的感知、定位、轨迹跟踪和安全停障系统开发，并在天津机场完成实车验证。</p>
                     </div>
 
-                    <div class="project-image-grid">
+                    <div class="project-media-grid">
                         <figure>
-                            <img src="assets/images/projects/autoware.png" alt="巡检机器人建图与导航实验">
-                            <figcaption>点云地图与真实环境自主导航测试</figcaption>
+                            <video controls preload="metadata" poster="assets/images/video-placeholder.svg">
+                                <source src="assets/videos/autoware-control.mp4" type="video/mp4">
+                            </video>
+                            <figcaption>项目视频：assets/videos/autoware-control.mp4</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/images/projects/autoware-control.png" onerror="this.onerror=null;this.src='assets/images/image-placeholder.svg';" alt="Autoware 巡检机器人项目图片">
+                            <figcaption>项目图片：assets/images/projects/autoware-control.png</figcaption>
                         </figure>
                     </div>
 
@@ -388,7 +378,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="tech-stack"><span>Autoware</span><span>ROS</span><span>LiDAR</span><span>Pure Pursuit</span><span>Point Cloud</span><span>ECU</span></div>
+                    <div class="tech-stack"><span>自动驾驶</span><span>激光雷达</span><span>点云聚类</span><span>障碍物检测</span></div>
                 </div>
             </article>
         </section>
