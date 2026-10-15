@@ -3,25 +3,460 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>朱思颖 | 个人主页</title>
-
+    <meta name="description" content="朱思颖的个人学术主页，介绍机器人运动规划与控制、机器人力控和双机械臂协同控制相关研究与项目。">
+    <meta name="robots" content="index, follow">
+    <title>朱思颖 | Academic Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <main class="hero">
-        <p class="label">ACADEMIC PORTFOLIO</p>
+    <nav class="navbar" aria-label="主导航">
+        <div class="nav-container">
+            <a class="nav-logo" href="#top">朱思颖</a>
+            <div class="nav-links">
+                <a href="#about">关于我</a>
+                <a href="#directory">项目</a>
+                <a href="#publications">成果</a>
+                <a href="#skills">技能</a>
+                <a href="#contact">联系</a>
+            </div>
+        </div>
+    </nav>
 
-        <h1>朱思颖</h1>
+    <header class="hero" id="top">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle">ACADEMIC PORTFOLIO</p>
+                <h1>朱思颖</h1>
+                <p class="hero-role">湖南大学 · 控制科学与工程硕士研究生</p>
+                <p class="hero-description">
+                    研究方向：机器人运动规划与控制、机器人力控、双机械臂协同控制。
+                    关注模型未知条件下的数据驱动控制、复杂接触任务与柔性对象操作。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#directory" class="button primary-button">查看项目</a>
+                    <a href="mailto:siyingzhu912@hnu.edu.cn" class="button secondary-button">联系我</a>
+                </div>
+            </div>
 
-        <p>
-            湖南大学控制科学与工程硕士研究生
-        </p>
+            <div class="hero-identity">
+                <div class="hero-photo">
+                    <img src="assets/images/profile.jpg" alt="朱思颖个人照片">
+                </div>
+                <img class="school-mark" src="assets/images/hnu-logo.png" alt="湖南大学校徽">
+            </div>
+        </div>
+    </header>
 
-        <p>
-            研究方向：机器人运动规划与控制、机器人力控、双机械臂协同控制
-        </p>
+    <main>
+        <section id="about" class="section">
+            <div class="section-header">
+                <p class="section-label">ABOUT</p>
+                <h2>关于我</h2>
+            </div>
+
+            <p class="about-text">
+                我目前在湖南大学机器人视觉感知与控制技术国家工程实验室学习，硕士阶段主攻机器人运动规划与控制、机器人力控及双机械臂协同控制。
+                研究工作覆盖数据驱动建模、在线雅可比估计、神经网络控制、轨迹优化和柔性线缆操作，并在 MATLAB、MuJoCo、CoppeliaSim、Gazebo 与真实机器人平台上完成验证。
+            </p>
+
+            <div class="highlights" aria-label="个人亮点">
+                <div class="highlight-card">
+                    <strong>Top 14%</strong>
+                    <span>硕士阶段排名 6 / 44</span>
+                </div>
+                <div class="highlight-card">
+                    <strong>5 篇</strong>
+                    <span>论文与会议成果</span>
+                </div>
+                <div class="highlight-card">
+                    <strong>1 项</strong>
+                    <span>授权中国发明专利</span>
+                </div>
+                <div class="highlight-card">
+                    <strong>国家奖学金</strong>
+                    <span>研究生排名 1 / 405</span>
+                </div>
+            </div>
+
+            <div class="education-grid">
+                <article class="education-card">
+                    <p class="card-kicker">2024.09 — 2027.06（预计）</p>
+                    <h3>湖南大学 · 控制科学与工程</h3>
+                    <p>硕士（推荐免试） · GPA 3.68 / 4.0 · Ranking 6 / 44</p>
+                    <p>核心课程：最优化、机器人控制、矩阵论、多个体学习与集群智能。</p>
+                </article>
+                <article class="education-card">
+                    <p class="card-kicker">2020.09 — 2024.06</p>
+                    <h3>湖南大学 · 机器人工程</h3>
+                    <p>工学学士 · GPA 3.75 / 4.0 · Ranking 5 / 58</p>
+                    <p>核心课程：机器人驱动与控制、机器人感知与学习、神经网络与深度学习。</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="directory" class="directory-section">
+            <div class="directory-container">
+                <div class="directory-header">
+                    <p class="section-label">PORTFOLIO</p>
+                    <h2>项目目录</h2>
+                    <p>单机械臂 · 多机械臂 · 无人机 · 无人车 · 嵌入式</p>
+                </div>
+
+                <div class="directory-row">
+                    <div class="directory-category-title">
+                        <span>01</span>
+                        <h3>单机械臂</h3>
+                    </div>
+                    <div class="directory-projects">
+                        <a href="#force-control" class="directory-item">
+                            <div>
+                                <h4>数据驱动运动—力协同控制</h4>
+                                <p>在线雅可比估计 · 神经网络 · 接触稳定性</p>
+                            </div>
+                            <span class="directory-arrow">→</span>
+                        </a>
+                        <a href="#motion-control" class="directory-item">
+                            <div>
+                                <h4>模型未知数据驱动运动控制</h4>
+                                <p>DZNN-QN · D²-FDRNN · 轨迹跟踪</p>
+                            </div>
+                            <span class="directory-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="directory-row">
+                    <div class="directory-category-title">
+                        <span>02</span>
+                        <h3>多机械臂</h3>
+                    </div>
+                    <div class="directory-projects">
+                        <a href="#cable-control" class="directory-item">
+                            <div>
+                                <h4>双臂柔性线缆形状控制与技能库</h4>
+                                <p>Koopman · 双 UR5e · MuJoCo · 技能学习</p>
+                            </div>
+                            <span class="directory-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="directory-row">
+                    <div class="directory-category-title">
+                        <span>03</span>
+                        <h3>无人机</h3>
+                    </div>
+                    <div class="directory-projects">
+                        <a href="#uav-control" class="directory-item">
+                            <div>
+                                <h4>四旋翼轨迹规划与视觉定位</h4>
+                                <p>Minimum-snap · A* · 视觉 SLAM · PD 控制</p>
+                            </div>
+                            <span class="directory-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="directory-row">
+                    <div class="directory-category-title">
+                        <span>04</span>
+                        <h3>无人车</h3>
+                    </div>
+                    <div class="directory-projects">
+                        <a href="#autoware" class="directory-item">
+                            <div>
+                                <h4>Autoware 巡检机器人导航与停障</h4>
+                                <p>激光雷达 · Pure Pursuit · 点云聚类</p>
+                            </div>
+                            <span class="directory-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="directory-row">
+                    <div class="directory-category-title">
+                        <span>05</span>
+                        <h3>嵌入式 | 单片机</h3>
+                    </div>
+                    <div class="directory-projects">
+                        <div class="directory-item is-placeholder">
+                            <div>
+                                <h4>项目内容待补充</h4>
+                                <p>可补充项目名称、芯片型号、主要功能、个人工作与演示图片</p>
+                            </div>
+                            <span class="directory-arrow">＋</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section" aria-label="项目详情">
+            <article id="cable-control" class="project-detail">
+                <div class="project-detail-inner">
+                    <div class="project-title-area">
+                        <p class="project-index">多机械臂 / 01 · 2026.03 — 至今</p>
+                        <h2>双臂柔性线缆数据驱动形状控制与操作技能库构建</h2>
+                        <p class="project-summary">国家科技重大专项子课题核心成员，面向复杂可变形对象开展双臂协同建模、形状控制与技能复用研究。</p>
+                    </div>
+
+                    <div class="project-image-grid two-images">
+                        <figure>
+                            <img src="assets/images/projects/cable-shape.png" alt="双机械臂柔性线缆形状控制仿真">
+                            <figcaption>双 UR5e 柔性线缆形状操作</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/images/projects/cable-straight.png" alt="双机械臂柔性线缆拉直仿真">
+                            <figcaption>线缆拉直与端点协同控制</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="project-info-grid">
+                        <div class="project-info-block">
+                            <h3>研究问题</h3>
+                            <p>柔性线缆具有高维、强非线性和形状状态难以直接建模等特点，需要在有限观测下实现稳定的形状预测与双臂协同操作。</p>
+                        </div>
+                        <div class="project-info-block">
+                            <h3>主要工作</h3>
+                            <ul>
+                                <li>基于 Koopman 算子构建线缆形状预测模型，研究双 UR5e 协作下的形状建模与控制方法。</li>
+                                <li>搭建 MATLAB / MuJoCo 仿真平台，完成数据采集、闭环控制验证和误差分析。</li>
+                                <li>面向拉直、形状变换和端点对齐等操作，构建可复用的操作技能与评测流程。</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>Koopman</span><span>MATLAB</span><span>MuJoCo</span><span>UR5e</span><span>双臂协同</span>
+                    </div>
+                </div>
+            </article>
+
+            <article id="force-control" class="project-detail alternate">
+                <div class="project-detail-inner">
+                    <div class="project-title-area">
+                        <p class="project-index">单机械臂 / 01 · 2025.07 — 至今</p>
+                        <h2>冗余机械臂数据驱动运动—力协同控制</h2>
+                        <p class="project-summary">湖南省教育厅优秀青年项目核心成员，研究模型未知条件下接触轨迹跟踪与交互力稳定控制。</p>
+                    </div>
+
+                    <div class="project-image-grid two-images">
+                        <figure>
+                            <img src="assets/images/projects/force-control-real.png" alt="UR5机械臂真实平台力控实验">
+                            <figcaption>UR5 实物平台接触任务</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/images/projects/force-control-sim.png" alt="机械臂力控仿真实验">
+                            <figcaption>CoppeliaSim 运动—力控制验证</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="project-info-grid">
+                        <div class="project-info-block">
+                            <h3>研究问题</h3>
+                            <p>针对接触任务中机械臂模型不确定、交互力响应滞后及接触稳定性不足的问题，研究数据驱动的运动—力协同控制方法。</p>
+                        </div>
+                        <div class="project-info-block">
+                            <h3>主要工作</h3>
+                            <ul>
+                                <li>设计双雅可比在线估计器与模糊自适应循环神经网络模型。</li>
+                                <li>实现未知模型条件下的轨迹—力协同跟踪，并完成闭环稳定性分析。</li>
+                                <li>在 MATLAB / CoppeliaSim 仿真和 UR5 实物平台验证接触轨迹跟踪与力控性能。</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>力控制</span><span>在线估计</span><span>FRNN</span><span>CoppeliaSim</span><span>UR5</span>
+                    </div>
+                </div>
+            </article>
+
+            <article id="motion-control" class="project-detail">
+                <div class="project-detail-inner">
+                    <div class="project-title-area">
+                        <p class="project-index">单机械臂 / 02 · 2023.03 — 2025.06</p>
+                        <h2>模型未知冗余机械臂数据驱动运动控制</h2>
+                        <p class="project-summary">国家自然科学基金青年项目核心成员，面向运动学模型不确定、传感噪声和外部扰动研究高精度轨迹跟踪。</p>
+                    </div>
+
+                    <div class="project-image-grid single-image">
+                        <figure>
+                            <img src="assets/images/projects/motion-tracking.png" alt="冗余机械臂多姿态轨迹跟踪实验">
+                            <figcaption>不同构型下的末端轨迹跟踪实验</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="project-info-grid">
+                        <div class="project-info-block">
+                            <h3>核心方法</h3>
+                            <ul>
+                                <li>提出 DZNN-QN 算法，结合离散零化神经动力学和在线雅可比估计，实现未知运动学模型下的高精度轨迹跟踪。</li>
+                                <li>设计 D²-FDRNN 模型，融合伪逆估计、模糊控制和卡尔曼滤波，提高实时性与抗噪鲁棒性。</li>
+                                <li>完成算法收敛性、稳定性与抗干扰性能分析，并在 Kinova / UR5 仿真和实物平台验证。</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>DZNN-QN</span><span>D²-FDRNN</span><span>卡尔曼滤波</span><span>Kinova</span><span>UR5</span>
+                    </div>
+                </div>
+            </article>
+
+            <article id="uav-control" class="project-detail alternate">
+                <div class="project-detail-inner">
+                    <div class="project-title-area">
+                        <p class="project-index">无人机 / 01 · 2023.03 — 2023.10</p>
+                        <h2>四旋翼无人机轨迹规划与视觉定位控制</h2>
+                        <p class="project-summary">全国大学生机器人大赛运控组核心成员，完成轨迹优化、三维自主避障和视觉定位控制算法开发。</p>
+                    </div>
+
+                    <div class="project-info-grid emphasis-grid">
+                        <div class="project-info-block feature-block">
+                            <span class="feature-number">01</span>
+                            <h3>轨迹规划</h3>
+                            <p>设计 Minimum-snap 轨迹优化算法，并基于 A* 算法实现三维环境中的自主避障。</p>
+                        </div>
+                        <div class="project-info-block feature-block">
+                            <span class="feature-number">02</span>
+                            <h3>飞行控制</h3>
+                            <p>设计串级 PD 控制器并完成解耦调参，实现规划轨迹的稳定跟踪。</p>
+                        </div>
+                        <div class="project-info-block feature-block">
+                            <span class="feature-number">03</span>
+                            <h3>视觉定位</h3>
+                            <p>基于视觉 SLAM 优化非线性位姿估计，并解决异构数学库的矩阵存储冲突。</p>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>Minimum-snap</span><span>A*</span><span>视觉 SLAM</span><span>PD 控制</span><span>四旋翼</span>
+                    </div>
+                </div>
+            </article>
+
+            <article id="autoware" class="project-detail">
+                <div class="project-detail-inner">
+                    <div class="project-title-area">
+                        <p class="project-index">无人车 / 01 · 2023.11 — 2024.01</p>
+                        <h2>基于 Autoware 的巡检机器人自主导航与停障系统</h2>
+                        <p class="project-summary">好停车网络科技有限公司机器人系统实习生，完成感知—定位—控制系统搭建和天津机场实车验证。</p>
+                    </div>
+
+                    <div class="project-image-grid single-image wide-image">
+                        <figure>
+                            <img src="assets/images/projects/autoware.png" alt="巡检机器人建图与避障实验">
+                            <figcaption>点云地图与真实环境自主导航测试</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="project-info-grid">
+                        <div class="project-info-block">
+                            <h3>主要工作</h3>
+                            <ul>
+                                <li>完成激光雷达—车体坐标系标定、TF 配置及 Autoware 与底盘 ECU 通信链路搭建。</li>
+                                <li>基于底盘运动学模型设计自适应 Pure Pursuit 轨迹跟踪算法。</li>
+                                <li>结合激光雷达点云聚类实现障碍物检测和安全停障，并在天津机场完成实车验证。</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>Autoware</span><span>ROS</span><span>激光雷达</span><span>Pure Pursuit</span><span>点云聚类</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="publications" class="section publications-section">
+            <div class="section-header">
+                <p class="section-label">PUBLICATIONS</p>
+                <h2>研究成果</h2>
+            </div>
+
+            <ol class="publication-list">
+                <li>
+                    <p><strong>Zhu Siying</strong>, Yang Min. Distance-Driven Obstacle Avoidance for Redundant Manipulators with Fuzzy-Adaptive Task Prioritization.</p>
+                    <span>2026 Chinese Automation Congress (CAC 2026) · 已录用</span>
+                </li>
+                <li>
+                    <p>Yang Min, <strong>Zhu Siying</strong>, Guo Yuxin, Chen Kaixu, Zhang Hui, Xiao Wei. A novel model-free DZNN-QN algorithm for redundant manipulator control.</p>
+                    <span>IEEE Transactions on Industrial Electronics, 2025, 72(12): 13572–13583 · 第二作者</span>
+                </li>
+                <li>
+                    <p>Yang Min, <strong>Zhu Siying</strong>, Zhang Hui. Inverse-free and data-driven motion tracking control for redundant robot with fuzzy recurrent neural network.</p>
+                    <span>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025 · 第二作者</span>
+                </li>
+                <li>
+                    <p>Yang Min, <strong>Zhu Siying</strong>, Zhang Hui, Wang Yaonan. Intelligent computational algorithms based on neural networks: a survey.</p>
+                    <span>Computational Intelligence, 2026, 42(2): e70193 · 第二作者</span>
+                </li>
+                <li>
+                    <p><strong>Zhu Siying</strong>, Yang Min. A new high-precision DZNN model for motion control of redundant manipulators with obstacle avoidance.</p>
+                    <span>2023 7th Asian Conference on Artificial Intelligence Technology (ACAIT), pp. 59–65</span>
+                </li>
+                <li class="patent-item">
+                    <p>一种冗余机械臂运动控制方法、计算机设备和存储介质。</p>
+                    <span>中国发明专利 ZL 2024 1 1825736.2 · 第二发明人 · 2025-03-21 授权</span>
+                </li>
+            </ol>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-header">
+                <p class="section-label">TECHNOLOGY</p>
+                <h2>专业技能</h2>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>机器人与控制</h3>
+                    <p>机器人运动学 / 动力学建模 · 自适应控制 · 最优控制 · 模糊控制 · 运动—力协同控制</p>
+                </article>
+                <article class="skill-card">
+                    <h3>建模与算法</h3>
+                    <p>数据驱动建模 · 神经网络 · 数值优化 · 滤波算法 · 轨迹规划 · 避障优化</p>
+                </article>
+                <article class="skill-card">
+                    <h3>编程与仿真</h3>
+                    <p>MATLAB · Python · C++ · PyTorch · MuJoCo · CoppeliaSim · Gazebo</p>
+                </article>
+                <article class="skill-card">
+                    <h3>机器人系统</h3>
+                    <p>ROS1 / ROS2 · UR5 / UR5e · Kinova · TCP/IP 通信 · 无人车实物控制</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="honors" class="section honors-section">
+            <div class="section-header">
+                <p class="section-label">HONORS</p>
+                <h2>荣誉奖项</h2>
+            </div>
+            <div class="honor-list">
+                <p><strong>奖学金：</strong>研究生国家奖学金、研究生比亚迪奖学金、研究生一等学业奖学金、本科生国科公益基金会奖助学金。</p>
+                <p><strong>竞赛：</strong>全国大学生机器人大赛 ROBOCUP 国家级二等奖、第八届“互联网+”大学生创新创业大赛省级二等奖。</p>
+                <p><strong>荣誉：</strong>校级优秀研究生、本科毕业实习优秀实习生。</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-header">
+                <p class="section-label">CONTACT</p>
+                <h2>联系方式</h2>
+            </div>
+            <p>欢迎就机器人控制、柔性对象操作与科研合作进行交流。</p>
+            <div class="contact-links">
+                <a href="mailto:siyingzhu912@hnu.edu.cn">siyingzhu912@hnu.edu.cn</a>
+                <a href="https://github.com/YingluckZ" target="_blank" rel="noopener noreferrer">GitHub / YingluckZ</a>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <p>© 2026 朱思颖 · Built for GitHub Pages</p>
+    </footer>
 </body>
 </html>
