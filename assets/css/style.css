@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Microsoft YaHei", sans-serif;
+    background: #f6f7f9;
+    color: #20242a;
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 80px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.label {
+    color: #9b1b30;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 56px;
+}
+
+.hero p {
+    max-width: 760px;
+    font-size: 18px;
+    line-height: 1.8;
+}
