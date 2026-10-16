@@ -346,7 +346,8 @@ img {
 
 .project-media-grid {
     width: 100%;
-    margin-bottom: 24px;
+    max-width: 860px;
+    margin: 0 auto 24px;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
@@ -387,38 +388,38 @@ img {
 }
 
 .project-media-grid.variable-ratio-media .force-video-landscape {
-    width: min(520px, 64vw);
-    height: min(390px, 48vw);
+    width: min(420px, 64vw);
+    height: min(316px, 48vw);
     aspect-ratio: 860 / 648;
 }
 
 .project-media-grid.variable-ratio-media .force-video-portrait {
-    width: min(315px, 67.5vw);
-    height: min(560px, 120vw);
+    width: min(240px, 58vw);
+    height: min(427px, 103vw);
     aspect-ratio: 1080 / 1920;
 }
 
 .project-media-grid.variable-ratio-media .motion-video-wide {
-    width: min(520px, 64vw);
-    height: min(293px, 36vw);
+    width: min(420px, 64vw);
+    height: min(236px, 36vw);
     aspect-ratio: 16 / 9;
 }
 
 .project-media-grid.variable-ratio-media .motion-video-portrait {
-    width: min(376px, 56.5vw);
-    height: min(500px, 75vw);
+    width: min(300px, 56.5vw);
+    height: min(398px, 75vw);
     aspect-ratio: 610 / 810;
 }
 
 .project-media-grid.variable-ratio-media .uav-video-square {
-    width: min(520px, 70vw);
-    height: min(520px, 70vw);
+    width: min(380px, 70vw);
+    height: min(380px, 70vw);
     aspect-ratio: 1 / 1;
 }
 
 .project-media-grid.variable-ratio-media .autoware-video-portrait {
-    width: min(320px, 56vw);
-    height: min(568px, 99.4vw);
+    width: min(240px, 56vw);
+    height: min(426px, 99.4vw);
     aspect-ratio: 320 / 568;
 }
 
